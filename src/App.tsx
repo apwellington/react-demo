@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Greeting } from "./components/Greeting";
+import {Counter} from "./components/Counter";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            {/*<h1>Wellcome to our react Demo React APP</h1>*/}
+            {/*<Greeting name="Wellington Adames" age={30} isMale={true} />*/}
+            <Counter value={0} />
+        </>
+    );
 }
 
 export default App;
